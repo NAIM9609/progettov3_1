@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// Aggiunti questi due import dopo aver inserito da CLI 'amplify auth'
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config);
 
 ReactDOM.render(
   <React.StrictMode>
